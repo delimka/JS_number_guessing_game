@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Guess the number</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Number guessing game</h1>
+
+<p class="rule">Write down randomly a number from 1 to 100</p>
+<div id="temp__guess__count"></div>
+<button type="button" id="start" class="start-btn" onclick="hideForm()">Start</button>
+<button type="button" id="reset" class="reset-btn" onclick="document.location.reload()">Reload</button>
+<p id="test"></p>
+<div id="form" class="form">
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+    <input type="text" id="guessField" class="guessField">
+    <button type="button" id="check" class="check-btn" onclick="checkGuess()">Check</button>
+</div>
+
+    <div id="last_guess">Your Guesses: </div>
+    <div id="high-or-low"></div>
+    <div id="wrong__guess_count"></div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+
+</html>
+
+
